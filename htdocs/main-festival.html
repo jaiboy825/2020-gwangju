@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+    <script src="js/main-festival.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+     <!-- 찾아오시는 길 -->
+     <div id="road-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body fx-4 fy-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 헤더 -->
+    <header>
+        <!-- 유틸리티 메뉴 -->
+        <div class="util_container">
+            <div class="util">
+                <div class="u_search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="u_menu">
+                    <select>
+                        <option value="한국어">한국어</option>
+                        <option value="English">English</option>
+                        <option value="中文(简体)">中文(简体)</option>
+                    </select>
+                    <a href="#">전라북도청</a>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <!-- 로고 -->
+            <div class="logo">네이스</div>
+            <!-- 메뉴 내비게이션 -->
+            <div class="menu_container">
+                <a href="">
+                    <div class="menus">HOME</div>
+                </a>
+                <a href="">
+                    <div class="menus">전북 대표 축제</div>
+                </a>
+                <a href="">
+                    <div class="menus">축제 정보</div>
+                </a>
+                <a href="">
+                    <div class="menus">축제 일정</div>
+                </a>
+                <a href="">
+                    <div class="menus">환율 안내</div>
+                </a>
+                <div class="menus all_menu">
+                    <a href="">종합지원센터</a>
+                    <div class="depth_menu_container">
+                        <a href="">
+                            <div class="depth">공지사항</div>
+                        </a>
+                        <a href="">
+                            <div class="depth">센터 소개</div>
+                        </a>
+                        <a href="">
+                            <div class="depth">관광정보 문의</div>
+                        </a>
+                        <a href="">
+                            <div class="depth">데이터 공개</div>
+                        </a>
+                        <a href=""  data-target="#road-modal" data-toggle="modal">
+                            <div class="depth">찾아오시는 길</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 전북 대표 축제 -->
+    <div class="main_container">
+        <div class="main_header">
+            <div class="title">
+                <h1>JEONBUK <strong>ON!</strong></h1>
+                <p>전북 대표 축제</p>
+            </div>
+            <div class="tabs">
+                <a href="?searchType=album" data-type="album" class="active">
+                    <i class="fa fa-table"></i>
+                    일반형
+                </a>
+                <a href="?searchType=list" data-type="list">
+                    <i class="fa fa-list"></i>
+                    목록형
+                </a>
+            </div>
+        </div>
+        <div id="content">
+            
+        </div>
+        <div id="paging" class="paging">
+            <a href="#" class="paging__blink"><i class="fa fa-angle-left"></i></a>
+            <a href="#" class="paging__link">1</a>
+            <a href="#" class="paging__blink"><i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+    <script src="./js/main-festival.js"></script>
+    <!-- /전북 대표 축제 -->
+
+    <!-- 상세 보기 -->
+    <div id="view-modal" class="modal fade">
+        
+    </div>
+    <!-- /상세 보기 -->
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer_head">
+            <div class="footer_menu">
+                <a href="#" class="f_menus">이용안내</a>
+                <a href="#" class="f_menus">개인정보 처리방침</a>
+                <a href="#" class="f_menus">저작권 보호정책</a>
+                <a href="#" class="f_menus">도로명 주소안내</a>
+                <a href="#" class="f_menus">사이트오류 신고</a>
+            </div>
+        </div>
+        <div class="footer_body">
+            <div class="f_body">
+                <div class="f_logo">
+                    네이스
+                </div>
+                <div class="f_info">
+                    <div class="fit">인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원</div>
+                    <div class="fit">COPYRIGHTⓒ 2016 HRDKOREA</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
